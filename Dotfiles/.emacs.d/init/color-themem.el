@@ -1,0 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/plugin/bzr/color-theme")
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-clarity)
+;(color-theme-classic)

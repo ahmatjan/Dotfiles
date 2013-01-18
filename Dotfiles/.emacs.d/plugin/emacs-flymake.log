@@ -1,0 +1,76 @@
+[2013-01-08 20:23:34.806470] switched OFF Flymake mode for buffer basic_string.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/basic_string.h
+[2013-01-08 20:23:34.904403] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/basic_string.h failed, cleaning up
+[2013-01-10 12:19:54.082829] switched OFF Flymake mode for buffer basic_ios.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/basic_ios.h
+[2013-01-10 12:19:54.262916] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/basic_ios.h failed, cleaning up
+[2013-01-10 14:20:15.129001] switched OFF Flymake mode for buffer demo.h due to fatal status TMPERR, warning Can't create temp file for /tmp/demo.h
+[2013-01-10 14:20:15.176849] init function flymake-master-make-cc-header-init for /tmp/demo.h failed, cleaning up
+[2013-01-10 14:26:12.813481] switched OFF Flymake mode for buffer demo.h due to fatal status TMPERR, warning Can't create temp file for /tmp/demo.h
+[2013-01-10 14:26:12.984030] init function flymake-master-make-cc-header-init for /tmp/demo.h failed, cleaning up
+[2013-01-10 14:56:35.426043] switched OFF Flymake mode for buffer limits.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/limits.h
+[2013-01-10 14:56:35.613895] init function flymake-master-make-cc-header-init for /usr/include/limits.h failed, cleaning up
+[2013-01-10 15:02:47.101213] switched OFF Flymake mode for buffer features.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/features.h
+[2013-01-10 15:02:47.269930] init function flymake-master-make-cc-header-init for /usr/include/features.h failed, cleaning up
+[2013-01-10 15:25:03.227359] switched OFF Flymake mode for buffer limits.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/limits.h
+[2013-01-10 15:25:03.396927] init function flymake-master-make-cc-header-init for /usr/include/limits.h failed, cleaning up
+[2013-01-10 15:26:59.637249] switched OFF Flymake mode for buffer stddef.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stddef.h
+[2013-01-10 15:26:59.855116] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stddef.h failed, cleaning up
+[2013-01-10 15:31:33.936569] switched OFF Flymake mode for buffer limits.h<2> due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h
+[2013-01-10 15:31:34.017535] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h failed, cleaning up
+[2013-01-10 15:31:57.087839] switched OFF Flymake mode for buffer limits.h<2> due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h
+[2013-01-10 15:31:57.276671] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h failed, cleaning up
+[2013-01-10 15:32:01.100204] switched OFF Flymake mode for buffer syslimits.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h
+[2013-01-10 15:32:01.281686] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h failed, cleaning up
+[2013-01-10 15:32:08.126200] switched OFF Flymake mode for buffer limits.h<2> due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h
+[2013-01-10 15:32:08.217314] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h failed, cleaning up
+[2013-01-10 15:32:30.809048] switched OFF Flymake mode for buffer syslimits.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h
+[2013-01-10 15:32:30.989258] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h failed, cleaning up
+[2013-01-10 15:32:53.375984] switched OFF Flymake mode for buffer stdint-gcc.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint-gcc.h
+[2013-01-10 15:32:53.456753] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint-gcc.h failed, cleaning up
+[2013-01-10 15:33:44.791424] switched OFF Flymake mode for buffer stdint.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint.h
+[2013-01-10 15:33:44.998757] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint.h failed, cleaning up
+[2013-01-10 15:33:49.893095] switched OFF Flymake mode for buffer stdbool.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdbool.h
+[2013-01-10 15:33:49.980144] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdbool.h failed, cleaning up
+[2013-01-10 15:35:33.646307] switched OFF Flymake mode for buffer resource.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/sys/resource.h
+[2013-01-10 15:35:33.719119] init function flymake-master-make-cc-header-init for /usr/include/sys/resource.h failed, cleaning up
+[2013-01-10 15:35:49.514121] switched OFF Flymake mode for buffer types.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/sys/types.h
+[2013-01-10 15:35:49.625832] init function flymake-master-make-cc-header-init for /usr/include/sys/types.h failed, cleaning up
+[2013-01-10 15:38:16.705481] switched OFF Flymake mode for buffer types.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/types.h
+[2013-01-10 15:38:16.887480] init function flymake-master-make-cc-header-init for /usr/include/bits/types.h failed, cleaning up
+[2013-01-10 15:38:48.135782] switched OFF Flymake mode for buffer wordsize.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/wordsize.h
+[2013-01-10 15:38:48.325652] init function flymake-master-make-cc-header-init for /usr/include/bits/wordsize.h failed, cleaning up
+[2013-01-10 15:41:38.676096] switched OFF Flymake mode for buffer features.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/features.h
+[2013-01-10 15:41:38.849018] init function flymake-master-make-cc-header-init for /usr/include/features.h failed, cleaning up
+[2013-01-10 15:46:33.596214] switched OFF Flymake mode for buffer typesizes.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/typesizes.h
+[2013-01-10 15:46:33.758967] init function flymake-master-make-cc-header-init for /usr/include/bits/typesizes.h failed, cleaning up
+[2013-01-10 15:50:00.903550] switched OFF Flymake mode for buffer unistd.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/unistd.h
+[2013-01-10 15:50:00.948726] init function flymake-master-make-cc-header-init for /usr/include/bits/unistd.h failed, cleaning up
+[2013-01-10 16:04:59.076575] switched OFF Flymake mode for buffer stl_algobase.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/stl_algobase.h
+[2013-01-10 16:04:59.306509] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/stl_algobase.h failed, cleaning up
+[2013-01-10 16:11:20.737340] switched OFF Flymake mode for buffer types.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/sys/types.h
+[2013-01-10 16:11:20.913292] init function flymake-master-make-cc-header-init for /usr/include/sys/types.h failed, cleaning up
+[2013-01-10 16:12:10.071973] switched OFF Flymake mode for buffer bitypes.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/sys/bitypes.h
+[2013-01-10 16:12:10.113727] init function flymake-master-make-cc-header-init for /usr/include/sys/bitypes.h failed, cleaning up
+[2013-01-10 16:12:48.881082] switched OFF Flymake mode for buffer features.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/features.h
+[2013-01-10 16:12:49.075815] init function flymake-master-make-cc-header-init for /usr/include/features.h failed, cleaning up
+[2013-01-10 16:13:25.396185] switched OFF Flymake mode for buffer types.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/types.h
+[2013-01-10 16:13:25.574257] init function flymake-master-make-cc-header-init for /usr/include/bits/types.h failed, cleaning up
+[2013-01-10 16:14:01.964961] switched OFF Flymake mode for buffer typesizes.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/bits/typesizes.h
+[2013-01-10 16:14:02.142478] init function flymake-master-make-cc-header-init for /usr/include/bits/typesizes.h failed, cleaning up
+[2013-01-10 16:14:40.258521] switched OFF Flymake mode for buffer limits.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/limits.h
+[2013-01-10 16:14:40.423139] init function flymake-master-make-cc-header-init for /usr/include/limits.h failed, cleaning up
+[2013-01-10 16:14:54.066294] switched OFF Flymake mode for buffer features.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/features.h
+[2013-01-10 16:14:54.267591] init function flymake-master-make-cc-header-init for /usr/include/features.h failed, cleaning up
+[2013-01-10 16:16:19.160053] switched OFF Flymake mode for buffer limits.h<2> due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h
+[2013-01-10 16:16:19.387894] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h failed, cleaning up
+[2013-01-10 16:19:10.627888] switched OFF Flymake mode for buffer syslimits.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h
+[2013-01-10 16:19:10.863481] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/syslimits.h failed, cleaning up
+[2013-01-10 16:20:09.189356] switched OFF Flymake mode for buffer limits.h<2> due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h
+[2013-01-10 16:20:09.401436] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed/limits.h failed, cleaning up
+[2013-01-10 16:20:50.217911] switched OFF Flymake mode for buffer stddef.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stddef.h
+[2013-01-10 16:20:50.455114] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stddef.h failed, cleaning up
+[2013-01-10 16:21:44.999941] switched OFF Flymake mode for buffer stdint.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint.h
+[2013-01-10 16:21:45.220868] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint.h failed, cleaning up
+[2013-01-10 16:21:49.173307] switched OFF Flymake mode for buffer stdint-gcc.h due to fatal status TMPERR, warning Can't create temp file for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint-gcc.h
+[2013-01-10 16:21:49.289872] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint-gcc.h failed, cleaning up
+[2013-01-17 17:19:29.676484] switched OFF Flymake mode for buffer stl_bvector.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/stl_bvector.h
+[2013-01-17 17:19:29.869418] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/stl_bvector.h failed, cleaning up

@@ -1,0 +1,44 @@
+MAILDIR=$HOME/Mail
+DEFAULT=$MAILDIR/Inbox/
+LOGFILE=$MAILDIR/procmail.log
+VERBOSE=on
+
+##菜谱行以:0开头
+##菜谱行中不可包含注释
+##使用否条件!禁止某菜谱
+##条件行以*开头，你的朋友作为正则表达式（regxp）
+##条件行并列，*之后所有部分将被送到egrep
+##执行行紧接条件行之后。这里是一个邮件箱的名称。
+
+#赵耀
+:0:
+* ^From: .*soarsky@foxmail.com.*
+$MAILDIR/UESTC/
+
+#李竟
+:0:
+* ^From: .*reinight@gmail.com.*
+$MAILDIR/UESTC/
+
+#闫书刚
+:0:
+* ^From: .*450548826@qq.com.*
+$MAILDIR/UESTC/
+
+#许都
+:0:
+* ^From: .*xudu.uestc@gmail.com.*
+$MAILDIR/UESTC/
+
+#廖丹
+:0:
+* ^From: .*liaodan@uestc.edu.cn.*
+$MAILDIR/UESTC/
+
+
+################################
+#最后一条：不符合上述任何一条
+#规则的邮件进入到默认邮件箱
+################################
+:0:
+$MAILDIR/Inbox/

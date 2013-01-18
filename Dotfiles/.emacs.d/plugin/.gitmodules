@@ -1,0 +1,66 @@
+[submodule "python/python-epc"]
+	path = python/python-epc
+	url = git://github.com/tkf/python-epc.git
+[submodule "python/python.el"]
+	path = python/python.el
+	url = git://github.com/fgallina/python.el.git
+[submodule "python/jedi"]
+	path = python/jedi
+	url = git://github.com/davidhalter/jedi.git
+[submodule "python/ipython"]
+	path = python/ipython
+	url = git://github.com/ipython/ipython.git
+[submodule "python/emacs-jedi"]
+	path = python/emacs-jedi
+	url = git://github.com/tkf/emacs-jedi.git
+[submodule "python/emacs-ipython-notebook"]
+	path = python/emacs-ipython-notebook
+	url = git://github.com/kiwanami/emacs-ipython-notebook.git
+[submodule "python/emacs-epc"]
+	path = python/emacs-epc
+	url = git://github.com/kiwanami/emacs-epc.git
+[submodule "python/emacs-deferred"]
+	path = python/emacs-deferred
+	url = git://github.com/kiwanami/emacs-deferred.git
+[submodule "python/emacs-ctable"]
+	path = python/emacs-ctable
+	url = git://github.com/kiwanami/emacs-ctable.git
+[submodule "python/django-mode"]
+	path = python/django-mode
+	url = git://github.com/myfreeweb/django-mode.git
+[submodule "auto-complete"]
+	path = auto-complete
+	url = git://github.com/auto-complete/auto-complete.git
+[submodule "auto-complete-auctex"]
+	path = auto-complete-auctex
+	url = git://github.com/monsanto/auto-complete-auctex.git
+[submodule "autopair"]
+	path = autopair
+	url = git://github.com/capitaomorte/autopair.git
+[submodule "emacs-flymake"]
+	path = emacs-flymake
+	url = git://github.com/illusori/emacs-flymake.git
+[submodule "htmlize"]
+	path = htmlize
+	url = http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git
+[submodule "magit"]
+	path = magit
+	url = git://github.com/magit/magit.git
+[submodule "pylookup"]
+	path = pylookup
+	url = git://github.com/tsgates/pylookup.git
+[submodule "yasnippet"]
+	path = yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "org-mode"]
+	path = org-mode
+	url = git://orgmode.org/org-mode.git
+[submodule "python/sexpdata"]
+	path = python/sexpdata
+	url = git://github.com/tkf/sexpdata.git
+[submodule "icicles"]
+	path = icicles
+	url = git://github.com/emacsmirror/icicles.git
+[submodule "gnus"]
+	path = gnus
+	url = http://git.gnus.org/gnus.git

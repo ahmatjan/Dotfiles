@@ -1,0 +1,15 @@
+;;定义一个非常有用的"日记"函数
+(defun insert-time ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d-%R")))
+
+(defun journal () 
+  (interactive) 
+  (find-file "~/journel")
+  (end-of-buffer)
+  (insert "\n")
+  (insert "**  ")
+  (insert-time)
+  (insert "  **")
+  (insert "\n    ")
+)

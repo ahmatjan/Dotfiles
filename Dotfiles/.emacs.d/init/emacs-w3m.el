@@ -1,0 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/plugin/cvs/emacs-w3m")
+(require 'w3m-load)
+(setq url-history-file "~/.emacs.d/cache/url-history")
+(setq url-cache-directory "~/.emacs.d/cache/w3m")
+;(require 'mime-w3m)
