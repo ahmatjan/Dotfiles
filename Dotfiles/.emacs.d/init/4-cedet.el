@@ -1,36 +1,10 @@
 ;;Reference:
 ;;http://alexott.net/writings/emacs-devenv/EmacsCedet.html
 ;;https://github.com/alexott/emacs-configs/blob/master/rc/emacs-rc-cedet.el
-
 (add-to-list 'load-path "~/.emacs.d/plugin/bzr/cedet")
 (add-to-list 'load-path "~/.emacs.d/plugin/bzr/cedet/contrib")
 (load "cedet-devel-load")
 
-;;special include dir
-(defconst cedet-user-include-dirs
-  (list ".." "../include" "../inc" "../common" "../public" "."
-        "../.." "../../include" "../../inc" "../../common" "../../public"))
-
-(setq cedet-sys-include-dirs (list
-                              "/usr/include"
-                              "/usr/include/bits"
-                              "/usr/include/linux"
-                              "/usr/include/asm"
-                              "/usr/include/glib-2.0"
-                              "/usr/include/gnu"
-                              "/usr/include/c++/4.7.2" ;;注意函数库版本变化
-                              "/usr/include/c++/4.7.2/i686-pc-linux-gnu" ;;注意体系结构变化
-                              "/usr/include/c++/4.7.2/backward"
-                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include"
-                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed"
-                              "/usr/local/include"))
-
-(let ((include-dirs cedet-user-include-dirs))
-  (setq include-dirs (append include-dirs cedet-sys-include-dirs))
-  (mapc (lambda (dir)
-          (semantic-add-system-include dir 'c-mode)
-          (semantic-add-system-include dir 'c++-mode))
-        include-dirs))
 
 (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
@@ -61,7 +35,7 @@
 (require 'semantic/bovine/gcc)
 (require 'semantic/ia)
 (require 'semantic/decorate/include)
-;;(require 'semantic/lex-spp)
+(require 'semantic/lex-spp)
 
 ;; loading contrib...
 (require 'eassist)
@@ -258,14 +232,13 @@
 ;; ;; )
 ;; ;; ))
 
-
 ;;使用CEDET和autocomplete对Qt代码进行补全
 ;;from http://www.emacswiki.org/cgi-bin/wiki/QtMode
 ;; syntax-highlighting for Qt
 ;; (based on work by Arndt Gulbrandsen, Troll Tech)
 ;;make sure sematic has already loaded.
-(setq qt4-base-directory "/usr/include")
-(setq qt4-Qt-dir "/usr/include/Qt")
+
+(setq qt4-base-directory "/usr/include/Qt")
 (setq qt4-QtCore-dir  "/usr/include/QtCore")
 (setq qt4-QtGui-dir   "/usr/include/QtGui")
 (setq qt4-QtHelp-dir  "/usr/include/QtHelp")
@@ -277,7 +250,8 @@
 (setq qt4-QtWebKit-dir  "/usr/include/QtWebKit")
 (setq qt4-QtDesigner-dir "/usr/include/QtDesigner")
 
-(semantic-add-system-include qt4-Qt-dir 'c++-mode)
+(semantic-add-system-include qt4-base-directory 'c++-mode)
+(add-to-list 'auto-mode-alist (cons qt4-base-directory 'c++-mode))
 (semantic-add-system-include qt4-QtGui-dir 'c++-mode)
 (semantic-add-system-include qt4-QtCore-dir 'c++-mode)
 (semantic-add-system-include qt4-QtNetWork-dir 'c++-mode)
@@ -287,14 +261,19 @@
 (semantic-add-system-include qt4-QtMultimedia-dir 'c++-mode)
 (semantic-add-system-include qt4-QtSvg-dir 'c++-mode)
 (semantic-add-system-include qt4-QtWebKit-dir 'c++-mode)
-(add-to-list 'auto-mode-alist (cons qt4-base-directory 'c++-mode))
 (semantic-add-system-include qt4-QtDesigner-dir 'c++-mode)
 
-(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig.h")
-(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-dist.h")
-(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qglobal.h")
-(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qobjectdefs.h")
 (add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qwebkitglobal.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qobjectdefs.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-nacl.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-large.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-medium.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-minimal.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-small.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qglobal.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig-dist.h")
+(add-to-list 'semantic-lex-c-preprocessor-symbol-file  "/usr/include/Qt/qconfig.h")
+(semantic-c-reset-preprocessor-symbol-map) ;;不可少，否则上面添加的symbol-file将不会被解析。
 
 ;;使semantic高亮Qt的关键字
 (defun jk/c-mode-common-hook ()
@@ -325,3 +304,40 @@
                             '(("\\<Q[A-Z][A-Za-z]*" . 'qt-keywords-face)))
     ))
 (add-hook 'c-mode-common-hook 'jk/c-mode-common-hook)
+
+;;special include dir
+(defconst cedet-user-include-dirs
+  (list "."
+        ".."
+        "../include"
+        "../inc"
+        "../common"
+        "../public"
+        "../.."
+        "../../include"
+        "../../inc"
+        "../../common"
+        "../../public"
+))
+
+(setq cedet-sys-include-dirs (list
+                              "/usr/include"
+                              "/usr/include/bits"
+                              "/usr/include/linux"
+                              "/usr/include/asm"
+                              "/usr/include/glib-2.0"
+                              "/usr/include/gnu"
+                              "/usr/include/c++/4.7.2" ;;注意函数库版本变化
+                              "/usr/include/c++/4.7.2/i686-pc-linux-gnu" ;;注意体系结构变化
+                              "/usr/include/c++/4.7.2/backward"
+                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include"
+                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed"
+                              "/usr/local/include"
+                              ))
+
+(let ((include-dirs cedet-user-include-dirs))
+  (setq include-dirs (append include-dirs cedet-sys-include-dirs))
+  (mapc (lambda (dir)
+          (semantic-add-system-include dir 'c-mode)
+          (semantic-add-system-include dir 'c++-mode))
+        include-dirs))

@@ -74,3 +74,19 @@
 [2013-01-10 16:21:49.289872] init function flymake-master-make-cc-header-init for /lib/gcc/i686-pc-linux-gnu/4.7.2/include/stdint-gcc.h failed, cleaning up
 [2013-01-17 17:19:29.676484] switched OFF Flymake mode for buffer stl_bvector.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/stl_bvector.h
 [2013-01-17 17:19:29.869418] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/stl_bvector.h failed, cleaning up
+[2013-01-19 14:14:11.142531] switched OFF Flymake mode for buffer qapplication.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/Qt/qapplication.h
+[2013-01-19 14:14:11.275696] init function flymake-master-make-cc-header-init for /usr/include/Qt/qapplication.h failed, cleaning up
+[2013-01-19 14:17:38.883125] switched OFF Flymake mode for buffer qapplication.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/Qt/qapplication.h
+[2013-01-19 14:17:38.964711] init function flymake-master-make-cc-header-init for /usr/include/Qt/qapplication.h failed, cleaning up
+[2013-01-19 14:18:37.800631] switched OFF Flymake mode for buffer qapplication.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/Qt/qapplication.h
+[2013-01-19 14:18:38.019008] init function flymake-master-make-cc-header-init for /usr/include/Qt/qapplication.h failed, cleaning up
+[2013-01-19 14:23:23.677470] switched OFF Flymake mode for buffer demo.cpp due to fatal status CFGERR, warning Configuration error has occurred while running (make -s -C ./ CHK_SOURCES=demo_flymake.cpp SYNTAX_CHECK_MODE=1 check-syntax)
+[2013-01-19 14:26:03.111965] switched OFF Flymake mode for buffer demo.cc due to fatal status CFGERR, warning Configuration error has occurred while running (make -s -C ./ CHK_SOURCES=demo_flymake.cc SYNTAX_CHECK_MODE=1 check-syntax)
+[2013-01-19 14:28:25.967585] switched OFF Flymake mode for buffer qpoint.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/QtCore/qpoint.h
+[2013-01-19 14:28:26.138625] init function flymake-master-make-cc-header-init for /usr/include/QtCore/qpoint.h failed, cleaning up
+[2013-01-19 14:28:42.734777] switched OFF Flymake mode for buffer basic_string.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/c++/4.7.2/bits/basic_string.h
+[2013-01-19 14:28:42.930694] init function flymake-master-make-cc-header-init for /usr/include/c++/4.7.2/bits/basic_string.h failed, cleaning up
+[2013-01-19 14:35:58.783889] switched OFF Flymake mode for buffer demo.cc due to fatal status CFGERR, warning Configuration error has occurred while running (make -s -C ./ CHK_SOURCES=demo_flymake.cc SYNTAX_CHECK_MODE=1 check-syntax)
+[2013-01-19 14:46:25.011310] switched OFF Flymake mode for buffer demo.cc due to fatal status CFGERR, warning Configuration error has occurred while running (make -s -C ./ CHK_SOURCES=demo_flymake.cc SYNTAX_CHECK_MODE=1 check-syntax)
+[2013-01-19 14:51:38.743955] switched OFF Flymake mode for buffer qapplication.h due to fatal status TMPERR, warning Can't create temp file for /usr/include/QtGui/qapplication.h
+[2013-01-19 14:51:38.859325] init function flymake-master-make-cc-header-init for /usr/include/QtGui/qapplication.h failed, cleaning up
