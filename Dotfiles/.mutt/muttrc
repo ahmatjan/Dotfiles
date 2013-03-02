@@ -96,7 +96,7 @@ source ~/.mutt/mutt.alias
 set alias_file=$HOME/.mutt/mutt.alias
 
 #文件类型默认打开程序
-set mailcap_path = $HOME/.mutt/mailcap
+set mailcap_path = $HOME/.mailcap
 
 #自动预览的附件类型,更好地阅读html邮件。
 #we use `wvvare' to view word, `pdftotext' to view pdf, `feh' to

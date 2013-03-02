@@ -15,6 +15,7 @@
 /home/geekard/.xmodmap 
 /home/geekard/.Xresources 
 /home/geekard/.vimrc 
+/home/geekard/.mailcap
 /etc/profile 
 /etc/leafnode/config
 /usr/share/kbd/keymaps/i386/qwerty/personal.map.gz
