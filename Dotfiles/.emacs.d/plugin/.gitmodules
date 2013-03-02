@@ -64,3 +64,15 @@
 [submodule "gnus"]
 	path = gnus
 	url = http://git.gnus.org/gnus.git
+[submodule "smart-tab"]
+	path = smart-tab
+	url = git://github.com/genehack/smart-tab.git
+[submodule "google-weather"]
+	path = google-weather
+	url = git://git.naquadah.org/google-weather-el.git
+[submodule "emms"]
+	path = emms
+	url = git://git.sv.gnu.org/emms.git
+[submodule "cnblogs"]
+	path = cnblogs
+	url = git://github.com/huwenbiao/cnblogs.git

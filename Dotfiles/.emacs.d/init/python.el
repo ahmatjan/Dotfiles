@@ -30,7 +30,12 @@
 (jedi:setup)
 ;;使用auto-complete作为jedi的自动补全前端
 (require 'auto-complete)
+
 (add-hook 'python-mode-hook 'jedi:ac-setup)
+(add-hook 'python-mode-hook '(lambda ()
+                               (setq indent-tabs-mode t)
+                               (setq tab-width 4)
+                               (setq python-indent-offset 4)))
 
 ;;ipython只支持python-mode.el而不是python.el
 ;(add-to-list 'load-path "~/.emacs.d/plugin/python/ipython/docs/emacs/")
@@ -47,5 +52,5 @@
 (load "django-mode")
 
 ;;move to yasnippet.el
-;;(add-to-list 'yas-snippet-dirs  "~/.emacs.d/plugin/python/django-mode/snippets")
+(add-to-list 'yas-snippet-dirs  "~/.emacs.d/plugin/python/django-mode/snippets")
 (add-to-list 'auto-mode-alist '("\\.djhtml$" . django-html-mode))

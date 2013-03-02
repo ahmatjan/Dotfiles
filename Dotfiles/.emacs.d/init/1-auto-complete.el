@@ -53,7 +53,7 @@
 ;;自动打开ac的buff-mode列表，这里增加了缺省没有的org-mode和python-mode.
 (setq ac-modes
       (append ac-modes '(org-mode sql-mode text-mode python-mode
-                                  makefile-gmake-mode
+                                  makefile-gmake-mode django-mode
 				  autoconf-mode makefile-automake-mode)))
 
 ;;重新配置候选键到C-p和C-n是为了避免和sementic插件的候选键冲突。

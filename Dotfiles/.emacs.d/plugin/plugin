@@ -1,0 +1,77 @@
+Entering 'auto-complete'
+origin	git://github.com/auto-complete/auto-complete.git (fetch)
+origin	git://github.com/auto-complete/auto-complete.git (push)
+Entering 'auto-complete-auctex'
+origin	git://github.com/monsanto/auto-complete-auctex.git (fetch)
+origin	git://github.com/monsanto/auto-complete-auctex.git (push)
+Entering 'autopair'
+origin	git://github.com/capitaomorte/autopair.git (fetch)
+origin	git://github.com/capitaomorte/autopair.git (push)
+Entering 'cnblogs'
+origin	git://github.com/huwenbiao/cnblogs.git (fetch)
+origin	git://github.com/huwenbiao/cnblogs.git (push)
+Entering 'emacs-flymake'
+origin	git://github.com/illusori/emacs-flymake.git (fetch)
+origin	git://github.com/illusori/emacs-flymake.git (push)
+Entering 'emms'
+origin	git://git.sv.gnu.org/emms.git (fetch)
+origin	git://git.sv.gnu.org/emms.git (push)
+Entering 'gnus'
+origin	http://git.gnus.org/gnus.git (fetch)
+origin	http://git.gnus.org/gnus.git (push)
+Entering 'htmlize'
+emacsmirror	git://github.com/emacsmirror/htmlize.git (fetch)
+emacsmirror	git://github.com/emacsmirror/htmlize.git (push)
+origin	http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git (fetch)
+origin	http://fly.srk.fer.hr/~hniksic/emacs/htmlize.git (push)
+Entering 'icicles'
+origin	git://github.com/emacsmirror/icicles.git (fetch)
+origin	git://github.com/emacsmirror/icicles.git (push)
+Entering 'magit'
+origin	git://github.com/magit/magit.git (fetch)
+origin	git://github.com/magit/magit.git (push)
+Entering 'org-mode'
+origin	git://orgmode.org/org-mode.git (fetch)
+origin	git://orgmode.org/org-mode.git (push)
+Entering 'pylookup'
+origin	git://github.com/tsgates/pylookup.git (fetch)
+origin	git://github.com/tsgates/pylookup.git (push)
+Entering 'python/django-mode'
+origin	git://github.com/myfreeweb/django-mode.git (fetch)
+origin	git://github.com/myfreeweb/django-mode.git (push)
+Entering 'python/emacs-ctable'
+origin	git://github.com/kiwanami/emacs-ctable.git (fetch)
+origin	git://github.com/kiwanami/emacs-ctable.git (push)
+Entering 'python/emacs-deferred'
+origin	git://github.com/kiwanami/emacs-deferred.git (fetch)
+origin	git://github.com/kiwanami/emacs-deferred.git (push)
+Entering 'python/emacs-epc'
+origin	git://github.com/kiwanami/emacs-epc.git (fetch)
+origin	git://github.com/kiwanami/emacs-epc.git (push)
+Entering 'python/emacs-ipython-notebook'
+origin	git://github.com/kiwanami/emacs-ipython-notebook.git (fetch)
+origin	git://github.com/kiwanami/emacs-ipython-notebook.git (push)
+Entering 'python/emacs-jedi'
+origin	git://github.com/tkf/emacs-jedi.git (fetch)
+origin	git://github.com/tkf/emacs-jedi.git (push)
+Entering 'python/ipython'
+origin	git://github.com/ipython/ipython.git (fetch)
+origin	git://github.com/ipython/ipython.git (push)
+Entering 'python/jedi'
+origin	git://github.com/davidhalter/jedi.git (fetch)
+origin	git://github.com/davidhalter/jedi.git (push)
+Entering 'python/python-epc'
+origin	git://github.com/tkf/python-epc.git (fetch)
+origin	git://github.com/tkf/python-epc.git (push)
+Entering 'python/python.el'
+origin	git://github.com/fgallina/python.el.git (fetch)
+origin	git://github.com/fgallina/python.el.git (push)
+Entering 'python/sexpdata'
+origin	git://github.com/tkf/sexpdata.git (fetch)
+origin	git://github.com/tkf/sexpdata.git (push)
+Entering 'smart-tab'
+origin	git://github.com/genehack/smart-tab.git (fetch)
+origin	git://github.com/genehack/smart-tab.git (push)
+Entering 'yasnippet'
+origin	git://github.com/capitaomorte/yasnippet.git (fetch)
+origin	git://github.com/capitaomorte/yasnippet.git (push)

@@ -50,7 +50,9 @@
 
 (require 'org-latex)
 ;;使用xelatex排版引擎
-(setq org-latex-to-pdf-process (list "latexmk -pdflatex=xelatex -pdf %s"))
+(setq org-latex-to-pdf-process '("xelatex -interaction nonstopmode %f"
+                                 "xelatex -interaction nonstopmode %f" ;; for multiple passes
+                                 ))
 
 (defun org-mode-article-modes ()
   (reftex-mode t)

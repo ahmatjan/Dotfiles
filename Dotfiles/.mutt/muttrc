@@ -2,24 +2,25 @@
 # set folder = imaps://imap.gmail.com/
 # set imap_user = geekard@gmail.com
 # set imap_pass = geekard@ho4o44
-# set spoolfile =+INBOX
-# mailboxes =+INBOX
-# set header_cache=~/.mutt/hcache
-# set postponed =+[Gmail]/Drafts
+# set spoolfile = +INBOX
+# mailboxes = +INBOX
+# set header_cache = ~/.mutt/hcache
+# set postponed = +[Gmail]/Drafts
 # unset imap_passive
 # set imap_keepalive = 300
 # set mail_check = 120
 
 # POP3收信设置。
-#set pop_user=xxx@mail.ustc.edu.cn
-#set pop_pass="xxxxxx"
-#set pop_host=202.38.64.8
+#set pop_user = "xxx@mail.ustc.edu.cn"
+#set pop_pass = xxxxxx
+#set pop_host = 202.38.64.8
 
 ##邮件编辑器
 #set editor = "emacsclient -c"
-set editor = "vim"
+set editor  = vim
+
 ##邮件发送程序
-set sendmail = "/usr/bin/msmtp"
+set sendmail = /usr/bin/msmtp
 
 ###邮箱设置
 #邮箱格式
@@ -31,19 +32,27 @@ set folder = $HOME/Mail
 #默认未读邮件位置
 set spoolfile = +Inbox
 
-#监视的邮箱位置，并随时报告新邮件。当按"c"切换信箱时，按TAB可选择它们。
-mailboxes +Inbox  +UESTC 
+#监视的邮箱位置(由procmail存放)，并随时报告新邮件。当按"c"切换信箱时，按TAB可选择它们。
+#注意mailboxes是mutt的命令，所以不用set来定义。
+#按照mutt manual的3.11节的说明，如果filename前有"shortcut characters, eg. = and !"
+#则它们会先被处理
+mailboxes =+Inbox  =+UESTC 
 
-#已读邮件存放位置
-#set mbox = $HOME/Mail/Readed
-set mbox="+Read"
+#已读邮件保存位置
+set mbox = +archive
+#退出时是否提示把读过的信件从spoolfile移到mbox中
+set move = ask-yes
 
-#草稿箱地址
-#set postponed = $HOME/Mail/Drafts
-set postponed = +Drafts
+#当有多个收件箱时(由mailboxes指定)，可以配置各收件箱里的邮件阅读后的保存位置
+#Usage: mobx-hook [!]pattern mailbox
+#mbox-hook Inbox +archive
 
-#已发送邮件存放地址,按月放到不同的文件夹中，注意：`date`前必须要有字符串。
-#set record = $HOME/Mail/Sent/Sent-`date +%Y-%m`
+
+#草稿箱
+set postponed = +drafts
+
+#发件箱 
+#按月放到不同的文件夹中，注意：`date`前必须要有字符串。
 set record = +Sent/Sent-`date +%Y-%m`
 
 #查看未读邮件时间间隔
@@ -53,17 +62,12 @@ set mail_check = 10
 #退出时是否确认，及确认方式。
 set quit = ask-yes
 
-#退出时是否提示把读过的信件从spoolfile移到mbox中
-set move = yes
-mbox-hook Inbox Readed
-
 #当 Mutt 用 thread 方式显示时，是否用纯 ascii 表示树状列表。
 set ascii_chars = yes
 
 #回信时是否包含原文。
-set include = yes
+set include = ask-yes
 #回信的引文之前插入那个符号？
-
 set indent_str="> "
 
 #gmail should not set envelope.
@@ -126,7 +130,7 @@ set sort_aux = date
 group -group me -addr geekard@gmail.com geekard@qq.com zj12912@gmail.com
 
 
-#外部程序退出时，是否要求用户按一个键才返回。这在察看某些shell命令输出时是比要的，
+#外部程序退出时，是否要求用户按一个键才返回。这在察看某些shell命令输出时是必要的，
 #否则它们一下就消失了。
 set wait_key = yes
 
