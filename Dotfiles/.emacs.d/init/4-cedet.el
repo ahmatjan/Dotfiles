@@ -1,8 +1,8 @@
 ;;Reference:
 ;;http://alexott.net/writings/emacs-devenv/EmacsCedet.html
 ;;https://github.com/alexott/emacs-configs/blob/master/rc/emacs-rc-cedet.el
-(add-to-list 'load-path "~/.emacs.d/plugin/bzr/cedet")
-(add-to-list 'load-path "~/.emacs.d/plugin/bzr/cedet/contrib")
+(add-to-list 'load-path "~/.emacs.d/plugin/cedet")
+(add-to-list 'load-path "~/.emacs.d/plugin/cedet/contrib")
 (load "cedet-devel-load")
 
 
@@ -88,9 +88,9 @@
 (add-hook 'semantic-init-hook 'my-semanticdb-hook)
 (setq semanticdb-default-save-directory "~/.emacs.d/cache/semanticdb")
 ;;add cscope backend support for semanticdb
-(load "~/.emacs.d/plugin/bzr/cedet/lisp/cedet/cedet-cscope.el")
-(load "~/.emacs.d/plugin/bzr/cedet/lisp/cedet/semantic/db-cscope.el")
-(load "~/.emacs.d/plugin/bzr/cedet/lisp/cedet/semantic/symref/cscope.el")
+(load "~/.emacs.d/plugin/cedet/lisp/cedet/cedet-cscope.el")
+(load "~/.emacs.d/plugin/cedet/lisp/cedet/semantic/db-cscope.el")
+(load "~/.emacs.d/plugin/cedet/lisp/cedet/semantic/symref/cscope.el")
 (when (cedet-cscope-version-check t)
   (semanticdb-enable-cscope-databases))
 
@@ -327,11 +327,11 @@
                               "/usr/include/asm"
                               "/usr/include/glib-2.0"
                               "/usr/include/gnu"
-                              "/usr/include/c++/4.7.2" ;;注意函数库版本变化
-                              "/usr/include/c++/4.7.2/i686-pc-linux-gnu" ;;注意体系结构变化
-                              "/usr/include/c++/4.7.2/backward"
-                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include"
-                              "/usr/lib/gcc/i686-pc-linux-gnu/4.7.2/include-fixed"
+                              "/usr/include/c++/4.8.0" ;;注意函数库版本变化
+                              "/usr/include/c++/4.8.0/x86_64-unknown-linux-gnu" ;;注意体系结构变化
+                              "/usr/include/c++/4.8.0/backward"
+                              "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/include"
+                              "/usr/lib/gcc/x86_64-unknown-linux-gnu/4.8.0/include-fixed"
                               "/usr/local/include"
                               ))
 

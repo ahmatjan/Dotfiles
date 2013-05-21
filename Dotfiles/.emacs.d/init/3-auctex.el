@@ -1,8 +1,8 @@
 ;;Reference: http://emacser.com/auctex.htm
 ;;http://www.emacswiki.org/emacs/AUCTeX
 
-(add-to-list 'load-path "~/.emacs.d/plugin/cvs/auctex")
-(add-to-list 'load-path "~/.emacs.d/plugin/cvs/auctex/preview")
+(add-to-list 'load-path "~/.emacs.d/plugin/auctex")
+(add-to-list 'load-path "~/.emacs.d/plugin/auctex/preview")
 
 ;;不能为(require 'auctex),因为auctex.el中没有提供(provide 'auctex)语句
 (load "auctex")
@@ -51,5 +51,5 @@
  ((eq system-type 'gnu/linux)
   (add-hook 'LaTeX-mode-hook
            (lambda ()
-             (setq TeX-view-program-selection '((output-pdf "Evince")
-                                                (output-dvi "Evince")))))))
+             (setq TeX-view-program-selection '((output-pdf "evince")
+                                                (output-dvi "evince")))))))

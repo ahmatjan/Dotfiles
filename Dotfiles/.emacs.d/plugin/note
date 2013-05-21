@@ -1,0 +1,26 @@
+git clone git://orgmode.org/org-mode.git
+git clone http://git.gnus.org/gnus-html.git
+git clone git://github.com/davidhalter/jedi.git
+git clone git://github.com/tkf/python-epc.git
+git clone git://github.com/tkf/sexpdata.git
+git clone git://github.com/kiwanami/emacs-ctable.git
+git clone git://github.com/kiwanami/emacs-epc.gi
+git clone git://github.com/tkf/emacs-jedi.git
+git clone git://github.com/kiwanami/emacs-deferred.git
+git clone git://github.com/fgallina/python.el.git
+git clone git://github.com/illusori/emacs-flymake.git
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+cvs -z3 -d:pserver:anonymous@cscope.cvs.sourceforge.net:/cvsroot/cscope co -P cscope
+git clone http://git.gnus.org/gnus.git/
+git clone git://github.com/vitoshka/ac-math.git
+git clone git://github.com/emacsmirror/icicles.git
+git clone git://github.com/monsanto/auto-complete-auctex.git
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+git clone git://github.com/capitaomorte/yasnippet.git
+git clone https://github.com/emacsmirror/htmlize.git
+git clone git://github.com/auto-complete/auto-complete.git
+bzr checkout bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk cedet
+git clone git://github.com/capitaomorte/autopair.git
+cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/auctex co auctex 
+bzr branch http://bzr.savannah.gnu.org/r/color-theme/trunk 
+

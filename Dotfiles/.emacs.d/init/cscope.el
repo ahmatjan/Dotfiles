@@ -44,5 +44,5 @@
 ;;      C-c s T         Locate this buffer's cscope directory.
 ;;                      (alternate binding: "T" --> "tell").
 ;;      C-c s D         Dired this buffer's directory.
-(add-to-list 'load-path "~/.emacs.d/plugin/cvs/cscope/contrib/xcscope")
+(add-to-list 'load-path "~/.emacs.d/plugin/cscope/contrib/xcscope")
 (require 'xcscope)

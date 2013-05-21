@@ -125,7 +125,7 @@
 ;;http://fanqo.wordpress.com/2011/04/19/emacs-nw-fontset-tty-does-not-exist/
 ;;http://blog.chmouel.com/2009/08/11/emacs-daemon-and-xdefaults/
 (defun frame-setting ()
-  (set-frame-font "Monaco-10")
+  (set-frame-font "Monaco-11")
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
                       charset

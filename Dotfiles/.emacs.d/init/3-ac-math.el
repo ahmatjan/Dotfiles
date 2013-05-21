@@ -1,7 +1,7 @@
 ;;;After auto-complete
 ;;利用autocomplete对latex模式自动补全。
 ;;Reference: http://code.google.com/p/ac-math/
-(add-to-list 'load-path "~/.emacs.d/plugin/svn/ac-math")
+(add-to-list 'load-path "~/.emacs.d/plugin/ac-math")
 
 (require 'ac-math)
 (add-to-list 'ac-modes 'latex-mode)   ; make auto-complete aware of {{{latex-mode}}}
