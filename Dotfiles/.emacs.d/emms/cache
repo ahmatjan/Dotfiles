@@ -1,7 +1,0 @@
-;;; .emms-cache -*- mode: emacs-lisp; coding: utf-8; -*-
-(puthash "/home/geekard/Music/canon/DEPAPEPE - パッヘルベル「パッヘルベルのカノン」.mp3" '(*track* (type . file) (name . "/home/geekard/Music/canon/DEPAPEPE - パッヘルベル「パッヘルベルのカノン」.mp3") (metadata) (last-played 20727 48222 458729) (play-count . 4) (info-mtime 20668 20163)) emms-cache-db)
-(puthash "/home/geekard/Video/The-Story-Of-Linux.mp4" '(*track* (type . file) (name . "/home/geekard/Video/The-Story-Of-Linux.mp4") (metadata) (last-played 20722 44599 52823) (play-count . 1) (info-mtime 20668 20136)) emms-cache-db)
-(puthash "/home/geekard/Music/canon/卡农 - 三支木吉他重奏版.mp3" '(*track* (type . file) (name . "/home/geekard/Music/canon/卡农 - 三支木吉他重奏版.mp3") (metadata) (info-mtime 20668 20163) (last-played 20727 48483 487735) (play-count . 5)) emms-cache-db)
-(puthash "/home/geekard/Music/canon/卡农 - 吉他温情版.mp3" '(*track* (type . file) (name . "/home/geekard/Music/canon/卡农 - 吉他温情版.mp3") (metadata) (info-mtime 20668 20163) (last-played 20727 48710 23123) (play-count . 4)) emms-cache-db)
-(puthash "/home/geekard/Music/canon/卡农 - 弗拉明戈版.mp3" '(*track* (type . file) (name . "/home/geekard/Music/canon/卡农 - 弗拉明戈版.mp3") (metadata) (info-mtime 20668 20163) (last-played 20727 49010 348804) (play-count . 3)) emms-cache-db)
-(puthash "/home/geekard/Music/canon/押尾桑  - 卡农.mp3" '(*track* (type . file) (name . "/home/geekard/Music/canon/押尾桑  - 卡农.mp3") (metadata) (info-mtime 20668 20163) (last-played 20727 49285 432455) (play-count . 2)) emms-cache-db)

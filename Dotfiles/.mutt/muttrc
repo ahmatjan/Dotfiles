@@ -16,8 +16,11 @@
 #set pop_host = 202.38.64.8
 
 ##邮件编辑器
-#set editor = "emacsclient -c"
-set editor  = vim
+set editor = "emacsclient -c"
+#set editor  = vim
+
+##email body类型, 设置为text/html可以发送html内容
+set content_type = text/html
 
 ##邮件发送程序
 set sendmail = /usr/bin/msmtp
@@ -36,7 +39,8 @@ set spoolfile = +Inbox
 #注意mailboxes是mutt的命令，所以不用set来定义。
 #按照mutt manual的3.11节的说明，如果filename前有"shortcut characters, eg. = and !"
 #则它们会先被处理
-mailboxes =+Inbox  =+UESTC 
+mailboxes =+Inbox  =+UESTC =+Baidu =+Gmail =+QQ
+
 
 #已读邮件保存位置
 set mbox = +archive
