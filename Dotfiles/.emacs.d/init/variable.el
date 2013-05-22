@@ -118,6 +118,10 @@
 
 (ido-mode t)
 
+;;当从mutt中调用emacs时，进入mail mode
+;; mutt support
+(setq auto-mode-alist (append '(("/tmp/mutt.*" . mail-mode)) auto-mode-alist))
+
 ;;中文字体
 ;;Refer:http://emacser.com/torture-emacs.htm
 ;;http://emacser.com/daemon.htm
