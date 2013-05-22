@@ -8,7 +8,7 @@ type = SimplePOP3SSLRetriever
 server = email.baidu.com
 username = zhangjun15
 port = 995
-password = geekard@ho4o44
+password = xxxxxx
 
 [destination]
 type = MDA_external
