@@ -1,0 +1,16 @@
+[options]
+verbose = 1
+read_all = false
+message_log = $HOME/.getmail/log
+
+[retriever]
+type = SimplePOP3SSLRetriever
+server = email.baidu.com
+username = zhangjun15
+port = 995
+password = geekard@ho4o44
+
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+arguments = ("-f", "%(sender)")
