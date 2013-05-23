@@ -24,9 +24,12 @@
                             ("nnmaildir"
                              (From (with-current-buffer gnus-article-buffer
                                      (message-fetch-field "to"))))))
-
-;;Notify via notifications-notify on new messages received in Gnus;
-(add-hook 'gnus-after-getting-new-news-hook 'gnus-notifications)
+;; Desktop notification intergation in Gnus;
+;; Need 'gnus-desktop-notify' and libnotify-bin package which provides notify-send program
+(add-to-list 'load-path "~/.emacs.d/plugin/gnus-desktop-notify")
+(require 'gnus-desktop-notify)
+(gnus-desktop-notify-mode)
+(gnus-demon-add-scanmail)
 
 ;;如果需要inline显示msword则需要安装"wv"和"w3m"软件包，然后在~/.mailcap文件中添加如下内容：
 ;;

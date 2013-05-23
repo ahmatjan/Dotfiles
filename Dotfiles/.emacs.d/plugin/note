@@ -1,3 +1,10 @@
+git clone git://github.com/wavexx/gnus-desktop-notify.git
+git clone git://github.com/hbin/molokai-theme.git
+git clone git://github.com/magnars/dash.el.git
+git clone git://github.com/Fuco1/smartparens.git
+git clone git://github.com/jcsalomon/smarttabs.git
+git clone git://github.com/magit/magit.git
+git clone git://git.sv.gnu.org/emms.git
 git clone git://orgmode.org/org-mode.git
 git clone http://git.gnus.org/gnus-html.git
 git clone git://github.com/davidhalter/jedi.git
@@ -20,7 +27,5 @@ git clone git://github.com/capitaomorte/yasnippet.git
 git clone https://github.com/emacsmirror/htmlize.git
 git clone git://github.com/auto-complete/auto-complete.git
 bzr checkout bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk cedet
-git clone git://github.com/capitaomorte/autopair.git
 cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/auctex co auctex 
 bzr branch http://bzr.savannah.gnu.org/r/color-theme/trunk 
-
