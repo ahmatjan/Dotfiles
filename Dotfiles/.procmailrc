@@ -28,11 +28,11 @@ $MAILDIR/UESTC/
 #夏海熊
 :0:
 *^(From|To):.*haixiong513@163.com.*
-$MAILDIR/UESTC
+$MAILDIR/UESTC/
 
 :0:
 * ^(From|To):.*uestc.*
-$MAIDIR/UESTC
+$MAIDIR/UESTC/
 
 #############################################
 ##   Baidu.com                             ##
@@ -42,128 +42,129 @@ $MAIDIR/UESTC
 #全国监控网报警
 :0:
 * ^From:.*bnms@baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/bnms-全国监控网
+$MAILDIR/Baidu/cdn-alarm/bnms-全国监控网/
 
 #cdnms
 :0:
 * ^From:.*cdnms-alarm@baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/cdnms-alarm--Jorcol监控
+$MAILDIR/Baidu/cdn-alarm/cdnms-alarm--Jorcol监控/
 
 ##流量切换
 # By flowost
 #flowost normal
 :0:
 * ^From:.*flowost@baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/flost-流量切换
+$MAILDIR/Baidu/cdn-alarm/flost-流量切换/
+
 # By OP
 :0:
 * ^From:.*work@jx-jomo-jampcore.jx.baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/OP-流量切换
+$MAILDIR/Baidu/cdn-alarm/OP-流量切换/
 
 #new_monitors
 :0:
 * ^From:.*new_monitors@jx-jomo-jampcore.jx.*
 * ^Subject:.*成功率报警.*
-$MAILDIR/Baidu/cdn-alarm/new_monitors--成功率报警
+$MAILDIR/Baidu/cdn-alarm/new_monitors--成功率报警/
 
 :0:
 * ^From:.*new_monitors@jx-jomo-jampcore.jx.*
-$MAILDIR/Baidu/cdn-alarm/new_monitors--Jorcol监控
+$MAILDIR/Baidu/cdn-alarm/new_monitors--Jorcol监控/
 
 :0:
 * ^From:.*new_monitors@monitors-log0.jomodns.com.*
-$MAILDIR/Baidu/cdn-alarm/new_monitors-flow监控
+$MAILDIR/Baidu/cdn-alarm/new_monitors-flow监控/
 
 #noah 报警和波动预警
 :0:
 * ^From:.*noah-autopost@baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/noah-autopost
+$MAILDIR/Baidu/cdn-alarm/noah-autopost/
 
 #网络链路监视
 :0:
 * ^From:.*root@tc-sys-ne00.tc.baidu.com
-$MAILDIR/Baidu/cdn-alarm/LINK
+$MAILDIR/Baidu/cdn-alarm/LINK/
 
 #CDN Services Daily Summary
 :0:
 * ^Subject:.*CDN Services Daily Summary.*
-$MAILDIR/Baidu/Daily/cdn-postman--Services_Daily_Summary
+$MAILDIR/Baidu/Daily/cdn-postman--Services_Daily_Summary/
 
 #最优覆盖差异报表
 :0:
 * ^Subject:.*最优覆盖差异报表.*
-$MAILDIR/Baidu/Daily/最优覆盖差异报表
+$MAILDIR/Baidu/Daily/最优覆盖差异报表/
 
 #CDN质量日报
 :0:
 * ^Subject:.*CDN质量日报.*
-$MAILDIR/Baidu/Daily/CDN质量日报
+$MAILDIR/Baidu/Daily/CDN质量日报/
 
 #Jomo日报
 :0:
 * ^Subject:.*JOMO DAILY.*
-$MAILDIR/Baidu/Daily/JOMO-DAILY
+$MAILDIR/Baidu/Daily/JOMO-DAILY/
 
 #CDN运营数据周报
 :0:
 * ^Subject:.*CDN 运营数据周报.*
-$MAILDIR/Baidu/Weekly/CDN运营数据周报
+$MAILDIR/Baidu/Weekly/CDN运营数据周报/
 
 #其它类型报警
 :0:
 * ^To:.*cdn-alarm@baidu.com.*
-$MAILDIR/Baidu/cdn-alarm/others
+$MAILDIR/Baidu/cdn-alarm/others/
 
 ############ 操作单 ###########################
 :0:
 * ^Subject:.*操作单.*
-$MAILDIR/Baidu/操作单
+$MAILDIR/Baidu/操作单/
 
 ############ 建设扩容 #########################
 :0:
 * ^Subject:.*建设扩容.*
-$MAILDIR/Baidu/建设扩容
+$MAILDIR/Baidu/建设扩容/
 
 ############ 周报 ###########################
 :0:
 * ^Subject:.*灵渠 流量统计周报.*
-$MAILDIR/Baidu/Weekly/灵渠-流量统计周报
+$MAILDIR/Baidu/Weekly/灵渠-流量统计周报/
 
 :0:
 * ^Subject:.*CDN组周报.*
-$MAILDIR/Baidu/Weekly/CDN组周报
+$MAILDIR/Baidu/Weekly/CDN组周报/
 
 :0:
 * ^Subject:.*CDN-BSS.*
-$MAILDIR/Baidu/Weekly/CDN-BSS-Topic
+$MAILDIR/Baidu/Weekly/CDN-BSS-Topic/
 
 :0:
 * ^Subject:.*CDN-Colombo.*
-$MAILDIR/Baidu/Weekly/CDN-Colombo-Topic
+$MAILDIR/Baidu/Weekly/CDN-Colombo-Topic/
 
 :0:
 * ^Subject:.*CDN运维.*
-$MAILDIR/Baidu/Weekly/CDN-运维-Topic
+$MAILDIR/Baidu/Weekly/CDN-运维-Topic/
 
 :0:
 * ^Subject:.*CDN运行周报.*
-$MAILDIR/Baidu/Weekly/CDN运行周报
+$MAILDIR/Baidu/Weekly/CDN运行周报/
 
 :0:
 * ^Subject:.*项目周报.*灵渠项目.*
-$MAILDIR/Baidu/Weekly/项目周报/灵渠
+$MAILDIR/Baidu/Weekly/项目周报/灵渠/
 
 :0:
 * ^Subject:.*项目周报.*IP库重构项目.*
-$MAILDIR/Baidu/Weekly/项目周报/IP库重构
+$MAILDIR/Baidu/Weekly/项目周报/IP库重构/
 
 :0:
-* ^From:.*(陈志杰|方玮|葛百强|琚鹏飞|刘凡|李立|李晓宇|罗翔|唐济生|唐文涛|吴代科|张俊|王亚龙|周紫熙).*周报
-$MAILDIR/Baidu/Weekly/个人周报
+* ^From:.*(陈志杰|方玮|葛百强|琚鹏飞|刘凡|李立|李晓宇|罗翔|唐济生|唐文涛|吴代科|张俊|王亚龙|周紫熙).*周报.*
+$MAILDIR/Baidu/Weekly/个人周报/
 
 :0:
 * ^Subject:.*周报.*
-$MAILDIR/Baidu/Weekly/Others
+$MAILDIR/Baidu/Weekly/Others/
 
 :0:
 * ^(From|To):.*baidu.com.*
@@ -172,9 +173,9 @@ $MAILDIR/Baidu/
 #########  QQ  ##############################
 :0:
 * ^(From|To):.*(geekard|574419270)@qq.com.*
-$MAILDIR/QQ
+$MAILDIR/QQ/
 
 ######## Gmail ############################
 :0:
 * ^(From|To):.*geekard@gmail.com.*
-$MAILDIR/Gmail
+$MAILDIR/Gmail/
