@@ -25,7 +25,9 @@
                              (From (with-current-buffer gnus-article-buffer
                                      (message-fetch-field "to"))))))
 
-;;(add-hook 'gnus-after-getting-new-news-hook 'gnus-notifications)
+;;Notify via notifications-notify on new messages received in Gnus;
+(add-hook 'gnus-after-getting-new-news-hook 'gnus-notifications)
+
 ;;如果需要inline显示msword则需要安装"wv"和"w3m"软件包，然后在~/.mailcap文件中添加如下内容：
 ;;
 ;; #Multimedia
