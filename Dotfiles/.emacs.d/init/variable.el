@@ -77,10 +77,11 @@
 ;;打开自动缩进模式
 (auto-fill-mode t)
 
+;;由于启用了smarttabs插件，它需要启用indent-tabs-mode
 ;;关闭tab功能, 所有的TAB用4个空格代替
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq c-basic-offset 4)
+;;(setq-default indent-tabs-mode nil)
+;;(setq-default tab-width 4)
+;;(setq c-basic-offset 4)
 
 ;;简写模式
 (setq abbrev-mode t)
