@@ -1,0 +1,96 @@
+git clone git://github.com/wavexx/gnus-desktop-notify.git
+git clone git://github.com/hbin/molokai-theme.git
+git clone git://github.com/magnars/dash.el.git
+git clone git://github.com/Fuco1/smartparens.git
+git clone git://github.com/jcsalomon/smarttabs.git
+git clone git://github.com/magit/magit.git
+git clone git://git.sv.gnu.org/emms.git
+git clone git://orgmode.org/org-mode.git
+git clone http://git.gnus.org/gnus-html.git
+git clone git://github.com/davidhalter/jedi.git
+git clone git://github.com/tkf/python-epc.git
+git clone git://github.com/tkf/sexpdata.git
+git clone git://github.com/kiwanami/emacs-ctable.git
+git clone git://github.com/kiwanami/emacs-epc.gi
+git clone git://github.com/tkf/emacs-jedi.git
+git clone git://github.com/kiwanami/emacs-deferred.git
+git clone git://github.com/fgallina/python.el.git
+git clone git://github.com/illusori/emacs-flymake.git
+git clone https://github.com/flycheck/flycheck
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+git clone http://git.gnus.org/gnus.git/
+git clone git://github.com/emacsmirror/icicles.git
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+git clone https://github.com/emacsmirror/htmlize.git
+
+# auto-complete依赖于popup和fuzzy
+git clone https://github.com/auto-complete/popup-el
+git clen https://github.com/auto-complete/fuzzy-el
+git clone git://github.com/auto-complete/auto-complete.git
+git clone git://github.com/capitaomorte/yasnippet.git
+
+# auto-complete-auctex依赖与auto-complete/yasnippet/auctex
+cvs -d:pserver:anonymous@cvs.sv.gnu.org:/sources/auctex co auctex 
+git clone git://github.com/monsanto/auto-complete-auctex.git
+git clone git://github.com/vitoshka/ac-math.git
+
+# ecb依赖于cedet和最新的cl-lib.el
+http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/cl-lib/cl-lib.el
+# 执行 make compile
+bzr checkout bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk cedet
+git clone https://github.com/alexott/ecb
+
+git clone https://github.com/adobe-fonts/source-code-pro
+
+git clone https://github.com/bbatsov/zenburn-emacs
+git clone https://github.com/sellout/emacs-color-theme-solarized
+
+# 用不同颜色标记括号层次
+git clone https://github.com/jlr/rainbow-delimiters
+
+git clone http://jblevins.org/git/markdown-mode.git
+
+git clone https://github.com/magnars/expand-region.el
+
+git clone https://github.com/DarwinAwardWinner/ido-ubiquitous
+
+#增量补全
+git clone https://github.com/emacs-helm/helm
+
+#在mode-line用小猫显示进度
+https://github.com/TeMPOraL/nyan-mode
+
+git clone https://github.com/lunaryorn/pkg-info.el
+git clone git clone https://github.com/magnars/s.el
+git clone https://github.com/cask/epl
+git clone https://github.com/bbatsov/projectile
+
+# html template
+git clone https://github.com/fxbois/web-mode
+
+git clone https://github.com/mooz/js2-mode
+
+git clone https://github.com/yoshiki/yaml-mode
+
+git clone https://github.com/lewang/flx
+
+git clone https://github.com/chriskempson/tomorrow-theme
+
+## pip2 install jedi
+## emacs侧:
+# emacs-jedi依赖于emacs-epc和python-environment.el
+# emacs-epc依赖于emacs-deferred和emacs-ctable
+
+# magit 依赖git-modes
+git clone https://github.com/magit/git-modes
+
+#将cscope安装到系统中./configure --prefix=xx && make && make install
+#然后将contrib/xcscope/cscope-indexer copy到PATH路径中.
+cvs -z3 -d:pserver:anonymous@cscope.cvs.sourceforge.net:/cvsroot/cscope co -P cscope
+git clone https://github.com/dkogan/xcscope.el
+# python2 setup.py install, 然后将contrib/xpycscope/pycscope-indexer放到PATH中。
+git clone https://github.com/portante/pycscope
+
+git clone https://github.com/dominikh/go-mode.el
+git clone https://github.com/nsf/gocode
+git clone https://github.com/syohex/emacs-go-eldoc

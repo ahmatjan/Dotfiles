@@ -1,7 +1,6 @@
-;;org-mode系统配置
 ;; The following lines are always needed.  Choose your own keys.
-(add-to-list 'load-path "~/.emacs.d/plugin/org-mode/lisp")
-(add-to-list 'load-path "~/.emacs.d/plugin/org-mode/contrib/lisp" t)
+(add-to-list 'load-path "~/.emacs.d/packages/org-mode/lisp")
+(add-to-list 'load-path "~/.emacs.d/packages/org-mode/contrib/lisp" t)
 ;; `org-install' is absolete.
 ;(require 'org-install)
 (global-set-key "\C-cc" 'org-capture)
@@ -48,7 +47,7 @@
         ("website" :components ("orgfile" "image" "other")
          :author "ZhangJun <geekard@gmail.com>")))
 
-(require 'org-latex)
+(require 'ox-latex)
 ;;使用xelatex排版引擎
 (setq org-latex-to-pdf-process '("xelatex -interaction nonstopmode %f"
                                  "xelatex -interaction nonstopmode %f" ;; for multiple passes

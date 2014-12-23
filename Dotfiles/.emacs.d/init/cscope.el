@@ -44,5 +44,24 @@
 ;;      C-c s T         Locate this buffer's cscope directory.
 ;;                      (alternate binding: "T" --> "tell").
 ;;      C-c s D         Dired this buffer's directory.
-(add-to-list 'load-path "~/.emacs.d/plugin/cscope/contrib/xcscope")
+(add-to-list 'load-path "~/.emacs.d/packages/xcscope.el")
+(setq cscope-program "gtags-cscope")
 (require 'xcscope)
+(cscope-setup)
+
+(add-to-list 'load-path "~/.emacs.d/packages/pycscope/contrib/xpycscope/")
+(require 'xpycscope)
+
+(define-key global-map [(control f3)]  'pycscope-set-initial-directory)
+(define-key global-map [(control f4)]  'pycscope-unset-initial-directory)
+(define-key global-map [(control f5)]  'pycscope-find-this-symbol)
+(define-key global-map [(control f6)]  'pycscope-find-global-definition)
+(define-key global-map [(control f7)]
+	'pycscope-find-global-definition-no-prompting)
+(define-key global-map [(control f8)]  'pycscope-pop-mark)
+(define-key global-map [(control f9)]  'pycscope-next-symbol)
+(define-key global-map [(control f10)] 'pycscope-next-file)
+(define-key global-map [(control f11)] 'pycscope-prev-symbol)
+(define-key global-map [(control f12)] 'pycscope-prev-file)
+(define-key global-map [(meta f9)]  'pycscope-display-buffer)
+(define-key global-map [(meta f10)] 'pycscope-display-buffer-toggle)

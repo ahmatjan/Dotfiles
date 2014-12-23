@@ -3,13 +3,19 @@
 
 ;(setq gnus-select-method '(nntp "news.gmane.org"))
 ;(setq gnus-select-method '(nntp "geekard.uestc.edu.cn"))
-(setq gnus-select-method '(nntp "localhost"))
+;(setq gnus-select-method '(nntps "localhost"))
+(setq gnus-select-method '(nntp "localhost"
+;                     (nntp-open-connection-function
+ ;                      nntp-open-ssl-stream)
+                     (nntp-port-number "119")
+                     (nntp-address "localhost"))
+)
 
 (setq gnus-secondary-select-methods
       '((nnmaildir "Mail" (directory "~/Mail"))
 ;        (nntp "news.aioe.org")
         ))
-(setq gnus-message-archive-group "nnmaildir+macro:outbox")
+;(setq gnus-message-archive-group "nnmaildir+macro:outbox")
 (setq message-sendmail-envelope-from 'header)
 (setq mail-envelope-from 'header)
 (setq message-send-mail-function 'message-send-mail-with-sendmail)
@@ -24,9 +30,10 @@
                             ("nnmaildir"
                              (From (with-current-buffer gnus-article-buffer
                                      (message-fetch-field "to"))))))
+
 ;; Desktop notification intergation in Gnus;
 ;; Need 'gnus-desktop-notify' and libnotify-bin package which provides notify-send program
-(add-to-list 'load-path "~/.emacs.d/plugin/gnus-desktop-notify")
+(add-to-list 'load-path "~/.emacs.d/packages/gnus-desktop-notify")
 (require 'gnus-desktop-notify)
 (gnus-desktop-notify-mode)
 (gnus-demon-add-scanmail)

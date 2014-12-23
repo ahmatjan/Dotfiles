@@ -1,2 +1,2 @@
-(add-to-list 'load-path "~/.emacs.d/plugin/htmlize")
+(add-to-list 'load-path "~/.emacs.d/packages/htmlize")
 (require 'htmlize)

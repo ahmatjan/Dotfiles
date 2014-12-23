@@ -1,11 +1,11 @@
-;;============================================================
+;;
 ;;语言设置
-;;============================================================
+;;
 (set-language-environment 'Chinese-GB)
-(setq current-language-environment "Chinese-GBK") 
+(setq current-language-environment "Chinese-GBK")
 (set-keyboard-coding-system 'utf-8)
-;;注意，这个很重要，一般网页的中文编码格式是GB2312不是utf-8因此
-;;复制到emacs过程中需要转换。euc-cn是gb2312的编码格式
+;;一般网页的中文编码格式是GB2312不是utf-8, 因此复制到emacs过程中需要转换。
+;;euc-cn是gb2312的编码格式
 (set-clipboard-coding-system 'euc-cn)
 (set-terminal-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)

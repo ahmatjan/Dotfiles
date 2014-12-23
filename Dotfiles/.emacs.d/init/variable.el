@@ -25,10 +25,10 @@
 (setq inhibit-startup-message t)
 
 ;;去掉工具栏
-(tool-bar-mode 0)
+;(tool-bar-mode 0)
 
 ;;去掉菜单栏
-;;(menu-bar-mode nil)
+;(menu-bar-mode nil)
 
 ;;去掉滚动条
 (scroll-bar-mode nil)
@@ -77,11 +77,11 @@
 ;;打开自动缩进模式
 (auto-fill-mode t)
 
-;;由于启用了smarttabs插件，它需要启用indent-tabs-mode
-;;关闭tab功能, 所有的TAB用4个空格代替
-;;(setq-default indent-tabs-mode nil)
-;;(setq-default tab-width 4)
-;;(setq c-basic-offset 4)
+;;tab
+;; set default tab char's display width to 4 spaces
+(setq-default tab-width 4) ; emacs 23.1, 24.2, default to 8
+;; make indentation commands use space only (never tab character)
+(setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t
 
 ;;简写模式
 (setq abbrev-mode t)
@@ -130,11 +130,17 @@
 ;;http://fanqo.wordpress.com/2011/04/19/emacs-nw-fontset-tty-does-not-exist/
 ;;http://blog.chmouel.com/2009/08/11/emacs-daemon-and-xdefaults/
 (defun frame-setting ()
-  (set-frame-font "Monaco-11")
+  (set-frame-font "Source Code Pro-12")
   (dolist (charset '(kana han symbol cjk-misc bopomofo))
     (set-fontset-font (frame-parameter nil 'font)
                       charset
                       (font-spec :family "Microsoft Yahei" :size 12))))
+;; (defun frame-setting ()
+;;   (set-frame-font "Monaco-11")
+;;   (dolist (charset '(kana han symbol cjk-misc bopomofo))
+;;     (set-fontset-font (frame-parameter nil 'font)
+;;                       charset
+;;                       (font-spec :family "Microsoft Yahei" :size 12))))
 
 (if (and (fboundp 'daemonp) (daemonp))
     (add-hook 'after-make-frame-functions
@@ -142,3 +148,16 @@
 		(with-selected-frame frame
 		  (frame-setting))))
   (frame-setting))
+
+;; tramp
+(require 'tramp)
+(setq tramp-default-method "ssh")
+(setq tramp-verbose 10)
+
+;;for dired
+(setq dired-recursive-deletes t) ; 可以递归的删除目录
+(setq dired-recursive-copies t) ; 可以递归的进行拷贝
+;;thumbs
+(autoload 'thumbs "thumbs" "Preview images in a directory." t)
+;;允许在dired中直接使用a命令进入当前目录
+(put 'dired-find-alternate-file 'disabled nil)
