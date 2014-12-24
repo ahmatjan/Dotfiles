@@ -1,7 +1,7 @@
 #IMAP收信设置,由于这里使用getmail收信，因此不需要这些配置了。
 # set folder = imaps://imap.gmail.com/
 # set imap_user = geekard@gmail.com
-# set imap_pass = geekard@ho4o44
+# set imap_pass = xxxx
 # set spoolfile = +INBOX
 # mailboxes = +INBOX
 # set header_cache = ~/.mutt/hcache
