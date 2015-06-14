@@ -1,8 +1,0 @@
-(add-to-list 'load-path "~/.emacs.d/packages/git-modes")
-(require 'gitattributes-mode)
-(require 'git-commit-mode)
-(require 'gitconfig-mode)
-(require 'gitignore-mode)
-(require 'git-rebase-mode)
-(add-to-list 'load-path "~/.emacs.d/packages/magit")
-(require 'magit)

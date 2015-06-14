@@ -1,7 +1,0 @@
-(add-to-list 'custom-theme-load-path "~/.emacs.d/packages/emacs-color-theme-solarized")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/packages/zenburn-emacs")
-(add-to-list 'load-path "~/.emacs.d/packages/tomorrow-theme")
-(require 'color-theme-tomorrow)
-;(load-theme 'solarized-light t)
-;(load-theme 'solarized-dark t)
-(load-theme 'zenburn t)

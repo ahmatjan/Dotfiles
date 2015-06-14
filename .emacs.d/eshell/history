@@ -1,5 +1,0 @@
-netstat -lnp
-sudo tail /var/log/news.log 
-sudo tail /var/log/crond.log 
-clear
-exit
